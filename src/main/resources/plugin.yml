@@ -1,0 +1,9 @@
+name: ${bukkit.pluginName}
+main: ${bukkit.mainClass}
+version: ${version}
+description: >
+  ${bukkit.pluginName} listens for votes from Votifier, stores them in a 
+  database and provides access to the votes and statistics through a simple
+  REST interface.
+database: true
+depend: [Votifier]

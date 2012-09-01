@@ -1,0 +1,6 @@
+webserver:
+  port: 8193
+memoization:
+  enabled: false
+  duration: 30
+  unit: SECONDS
