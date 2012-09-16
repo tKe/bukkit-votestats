@@ -19,7 +19,7 @@ public class VoterStats {
             + "       count(*) as count "
             + "  from " + Vote.TABLE + " "
             + " group by upper(username) "
-            + " order by 2 desc")
+            + " order by 2 desc, max(vote_time) desc")
             .create();
     
     public static Query<VoterStats> findIn(EbeanServer db) {
